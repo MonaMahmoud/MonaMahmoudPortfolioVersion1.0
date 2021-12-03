@@ -1,15 +1,116 @@
 body{
-    background-color: blanchedalmond;
+    background-color: black;
 }
-h1{
+/*h1{
     font-family: Arial, Helvetica, sans-serif;
-    color: darkred;
+    color: darkblue;
     text-align: center;
-}
+}*/
 
 .personalpicture{
     width: 100px;
     display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-item2 p{
+    font-size: xx-large;
+    color: darkcyan;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* change styling of h1 element inside header*/
+/*.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}*/
+
+/*change styling of h1 element inside header and has class .seo*/
+/*.header h1 .seo {
+    color: #d9dcd6;
+}*/
+
+/*Changed CSS selector to select nav tag that's inside .header class*/
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*Changed CSS selector to select unordered list that's inside nav tag that's inside .header class*/
+.header nav ul {
+    list-style-type: none;
+}
+
+/*Changed CSS selector to select unordered list item that's inside nav tag that's inside .header class*/
+.header nav ul li {
+    display: inline-block;
+    font-size: xx-large;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Change styling of a element */
+a {
+    color:darkcyan;
+    text-decoration: none;
+}
+
+
+
+/*media queries*/
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+/*@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  /* @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  } */
+  
+  /* Small smartphones - image placeholders change color */
+  /* @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  } */
+  /* Cards are split into two columns at 992px or smaller */
+/* @media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    } */
+    /* Change the header color */
+    /* header {
+      background: #772014;
+    }
+  } */
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  /* @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    } */
+    /* Change the header color */
+    /* header {
+      background: #8ac4ff;
+    }
+  } */

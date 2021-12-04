@@ -1,11 +1,6 @@
 body{
     background-color: black;
 }
-/*h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkblue;
-    text-align: center;
-}*/
 
 .personalpicture{
     width: 100px;
@@ -19,6 +14,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    float: left;
+    flex-wrap: wrap;
 }
 
 .flex-item2 p{
@@ -26,40 +23,60 @@ body{
     color: darkcyan;
     font-style: italic;
     font-weight: bold;
+    margin-right: 20px;
     margin-left: 20px;
 }
 
-/* change styling of h1 element inside header*/
-/*.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}*/
+.flex-item3{
+    float: right;
+}
 
-/*change styling of h1 element inside header and has class .seo*/
-/*.header h1 .seo {
-    color: #d9dcd6;
-}*/
+.grid-container{
+    display: grid;
+    align-items: center;
+}
 
-/*Changed CSS selector to select nav tag that's inside .header class*/
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
+.section-name{
+    color: darkcyan;
+}
+
+
+span[data-contact]{
+    position: relative;
+    cursor: grab;
+}
+
+span[data-contact]:hover::after,
+span[data-contact]:focus::after {
+  content: attr(data-contact);
+  position: absolute;
+  left: 0px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px #aaaaaa solid;
+  background-color: white;
+  padding: 12px;
+  color: darkcyan;
+  font-size: 80%;
+  z-index: 1;
+}
+
+nav {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-/*Changed CSS selector to select unordered list that's inside nav tag that's inside .header class*/
-.header nav ul {
+nav ul {
     list-style-type: none;
 }
 
-/*Changed CSS selector to select unordered list item that's inside nav tag that's inside .header class*/
-.header nav ul li {
+nav ul li {
     display: inline-block;
     font-size: xx-large;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
 /* Change styling of a element */

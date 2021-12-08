@@ -211,10 +211,12 @@ a {
   }
   .basiclink{
     font-size: medium;
+    color: cyan;
   }
 
   .resumetitle,.worktitle{
-    font-size: medium;
+    font-size: small;
+    
   }
 
 }

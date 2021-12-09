@@ -162,6 +162,9 @@ a {
   font-size: xx-large;
 }
 
+/* a:visited{
+  color: purple;
+} */
 
 /*media queries*/
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
@@ -195,9 +198,7 @@ a {
   }
 
   .flex-item2 {
-    
     margin-left: 10;
-    
   }
   .basiclink{
     font-size: medium;
@@ -206,8 +207,9 @@ a {
 
   .resumetitle,.worktitle{
     font-size: small;
-    
   }
+
+  
 
 }
 /* Cards are split into two columns at 992px or smaller */
